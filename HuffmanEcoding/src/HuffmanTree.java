@@ -55,6 +55,8 @@ public class HuffmanTree {
             curChar++;
             //if the character we're on appears at least once, add it to the list
             if (getFrequencies(contents, (char) curChar) > 0) {
+                HashMap<Character, Integer> tempMap = new HashMap<>();
+                tempMap.put((char)curChar, getFrequencies(contents, (char) curChar));
                 list.add(index, new HuffmanNode((char) curChar, getFrequencies(contents, (char) curChar)));
                 index++;
             }
@@ -128,9 +130,9 @@ public class HuffmanTree {
     }
 
     //scan file again and encode each letter
-    public void encodeFile() throws IOException {
+    public void encodeFile(String outputFile) throws IOException {
         String original = fileContents("inputFile.txt");
-        FileWriter writer = new FileWriter("outputFile.txt");
+        FileWriter writer = new FileWriter(outputFile);
         //look at each character in the original txt file
         for (int i = 0; i < original.length(); i++) {
             Character curLetter = original.charAt(i);
