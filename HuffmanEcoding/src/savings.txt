@@ -1,0 +1,11 @@
+Calculated space of original document (assuming each character is 8 bits) = 8 * (total number of characters)
+ = 37075 characters (found through iterating over each character in the input file) * 8 bits/character
+ = 296600 bits
+
+ Calculated space of encoded document = 1 * (total number of 0s and 1s)
+ = 172152 0s and 1s (found though iterating over each character in the output file) * 1 bit/character
+ = 172152 bits
+
+ Calculated Savings: 296600 - 172152
+ = 124448 bits (approx. 42% decrease)
+

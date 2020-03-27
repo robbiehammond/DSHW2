@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class HuffmanCompressor {
 
     public static void main(String[] args) throws IOException {
-        beginHuffman("inputFile", "outputFile");
+        beginHuffman(args[0], args[1]);
     }
 
     public static void beginHuffman(String inputFile, String outputFile) throws IOException {
