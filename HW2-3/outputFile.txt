@@ -1,0 +1,3 @@
+Run the compressor with "outputFile" as the second argument, then check back here.
+Or make your own file by putting whatever filename you want as the second parameter, the look back in the same directory this file is in for your fie with the output.
+Your choice, I won't be hurt by whatever you choose.

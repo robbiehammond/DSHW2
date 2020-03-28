@@ -1,0 +1,1 @@
+Run the compressor, then check back here for the encoding.
